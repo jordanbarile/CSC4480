@@ -20,7 +20,8 @@ CREATE TABLE STUDENT (
     Class_Year VARCHAR2(15),
     Major VARCHAR2(2),
     Course_ID VARCHAR2(6), 
-    Email_Address VARCHAR2(25)
+    Email_Address VARCHAR2(25),
+    Final_Grade NUMBER(5,2)
 );
 
 ALTER TABLE STUDENT ADD FOREIGN KEY (Course_ID) REFERENCES COURSE(Course_ID);
@@ -46,19 +47,16 @@ CREATE TABLE ASSIGNMENT (
 ALTER TABLE ASSIGNMENT ADD FOREIGN KEY (CategoryID) REFERENCES CATEGORIES(CategoryID);
 
 -- Julia Smyth: Inserting the Grade table 
-drop table grade cascade constraints; 
+DROP TABLE GRADES CASCADE CONSTRAINTS;
 
-CREATE TABLE Grades(
-    GradeID varchar2(4) PRIMARY KEY NOT NULL, 
+CREATE TABLE GRADES(
+    GradeID VARCHAR2(4) PRIMARY KEY NOT NULL, 
     Student_ID VARCHAR2(4),
-    AssignmentID varchar(10), 
+    AssignmentID varchar(15), 
     PointsEarned INT
 );
-ALTER TABLE Grades ADD FOREIGN KEY (student_ID) REFERENCES student(student_ID);
-ALTER TABLE Grades ADD FOREIGN KEY (AssignmentID) REFERENCES assignment(AssignmentID);
-
-
-
+ALTER TABLE Grades ADD FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID);
+ALTER TABLE Grades ADD FOREIGN KEY (AssignmentID) REFERENCES Assignment(AssignmentID);
 
 
 
