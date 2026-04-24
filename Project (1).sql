@@ -45,6 +45,19 @@ CREATE TABLE ASSIGNMENT (
 );
 ALTER TABLE ASSIGNMENT ADD FOREIGN KEY (CategoryID) REFERENCES CATEGORIES(CategoryID);
 
+-- Julia Smyth: Inserting the Grade table 
+drop table grade cascade constraints; 
+
+CREATE TABLE Grades(
+    GradeID varchar2(4) PRIMARY KEY NOT NULL, 
+    Student_ID VARCHAR2(4),
+    AssignmentID varchar(10), 
+    PointsEarned INT
+);
+ALTER TABLE Grades ADD FOREIGN KEY (student_ID) REFERENCES student(student_ID);
+ALTER TABLE Grades ADD FOREIGN KEY (AssignmentID) REFERENCES assignment(AssignmentID);
+
+
 
 
 
