@@ -10,7 +10,7 @@ CREATE TABLE COURSE (
     Name_Year VARCHAR2(4),
     Room_Number VARCHAR2(15),
     Status VARCHAR2(6),
-    Start_Time TIMESTAMP
+    Start_Time VARCHAR(10)
 );
 
 CREATE TABLE STUDENT (
@@ -57,6 +57,33 @@ CREATE TABLE GRADES(
 );
 ALTER TABLE Grades ADD FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID);
 ALTER TABLE Grades ADD FOREIGN KEY (AssignmentID) REFERENCES Assignment(AssignmentID);
+
+-- Lauren Markarian: Inserting records in Course and Student tables
+Insert into Course Values ('ME2001', 'Mechanical Engineering', '2001', 'Statics', 'Fall', '2026', 'Drosdick036', 'Full', '8:30am');
+Insert into Course Values ('ME3600', 'Mechanical Engineering', '3600', 'Fluid Mechanics', 'Fall', '2026', 'Drosdick031', 'Full', '12:30pm');
+Insert into Course Values ('ME3950', 'Mechanical Engineering', '3950', 'Heat Transfer', 'Fall', '2026',	'Drosdick314', 'Full', '3:30pm');
+
+Insert into Student Values ('CW01',	'Catherine', 'Wollan',	'Sophomore', 'ME', 'ME2001', 'cwollan@villanova.edu', '100');
+Insert into Student Values ('JC01',  'Joe', 'Ciampa', 'Sophomore', 'ME', 'ME2001', 'jciampa@villanova.edu', '90');
+Insert into Student Values ('JS01', 'Jack', 'Szeghy', 'Sophomore', 'ME', 'ME2001', 'jszeghy@villanova.edu', '95');
+Insert into Student Values('MD01',	'Mary',	'Duncan',	'Sophomore',	'ME',	'ME2001',	'mduncan@villanova.edu', '91');
+Insert into Student Values ('JB01',	'Jacob', 'Bambino',	'Sophomore', 'ME',	'ME2001', 'jbambino@villanova.edu', '93');
+Insert into Student Values ('KP01',	'Kierra',	'Pickard',	'Junior',	'ME',	'ME3600',	'kpickard@villanova.edu', '94.62');
+Insert into Student Values ('MB01', 'Morgan',	'Bullen', 'Junior', 'ME', 'ME3600', 'mbullen@villanova.edu', '96.15');
+Insert into Student Values ('CM01',	'Catherine',	'Murphy',	'Junior', 'ME',	'ME3600', 'Cmurph90@villanova.edu', '89.23');
+Insert into Student Values('MW01',	'Mia',	'Walsh',	'Junior',	'ME',	'ME3600',	'mwalsh@villanova.edu', '91.54');
+Insert into Student Values ('MS01', 'Matthew', 	'Seal',	'Junior',	'ME',	'ME3600',	'mseal@villanova.edu', '93.85');
+Insert into Student Values ('AM01',	'Ava',	'McCann',	'Junior',	'ME',	'ME3950',	'amccann@villanova.edu', '97');
+Insert into Student Values ('AK01',	'Arya',	'Kaul',	'Junior',	'ME',	'ME3950',	'akaul@villanova.edu', '93');
+Insert into Student Values ('SD01',	'Samantha',	'Damaia',	'Junior',	'ME',	'ME3950',	'sdamaia@villanova.edu', '91');
+Insert into Student Values ('SP01',	'Jenna',	'Parker',	'Junior',	'ME',	'ME3950', 'jparker@villanova.edu', '96');
+Insert into Student Values ('CD01',	'Caleigh',	'Dinsmore',	'Junior', 'ME', 'ME3950',	'cdinsmore@villanova.edu', '94');
+
+
+
+
+
+
 
 
 
