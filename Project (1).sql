@@ -282,6 +282,30 @@ values('CD01','MIDTERM_H', 24);
 insert into Grades 
 values('CD01','FINAL_H', 22);
 
+select * from Student;
+--Lauren Markarian: Update Final Grade Field
+UPDATE STUDENT s
+SET Final_Grade =
+(
+SELECT ROUND(
+       SUM(g.PointsEarned) / SUM(a.PointsPossible) * 100, 2
+)
+FROM Grades g
+JOIN ASSIGNMENT a
+ON g.AssignmentID = a.AssignmentID
+WHERE g.Student_ID = s.Student_ID
+);
+
+select * from Course;
+select * from Student;
+select * from Categories;
+select * from Assignment;
+select * from Grades;
+
+
+
+
+
 
 
 
