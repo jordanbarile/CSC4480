@@ -282,3 +282,32 @@ SET FINAL_GRADE = 90
 WHERE Student_ID = 'CM01';
 
 select * from student;
+
+--Try and add an assignmemnt to ME2001
+Insert into Assignment Values('HW3_S', 'C001', 'Homework3', 10);
+INSERT INTO Grades VALUES ('CW01', 'HW3_S', 10);
+INSERT INTO Grades VALUES ('JC01', 'HW3_S', 9);
+INSERT INTO Grades VALUES ('JS01', 'HW3_S', 10);
+INSERT INTO Grades VALUES ('MD01', 'HW3_S', 8);
+INSERT INTO Grades VALUES ('JB01', 'HW3_S', 10);
+
+UPDATE STUDENT s
+SET FINAL_GRADE =
+(
+SELECT ROUND(SUM((category_score * WeightPercentage / 100.0)), 2
+)
+From (
+    Select c.CategoryID, c.WeightPercentage, (SUM(g.PointsEarned) / SUM(a.PointsPossible)) * 100 AS
+    Category_Score
+FROM Grades g
+JOIN ASSIGNMENT a
+    ON g.AssignmentID = a.AssignmentID
+JOIN Categories c
+    ON a.CategoryID = c.CategoryID
+WHERE g.Student_ID = s.Student_ID
+Group by c.CategoryID, c.WeightPercentage
+)
+);
+
+select * from Student;
+select * from Assignment;
