@@ -62,21 +62,21 @@ Insert into Course Values ('ME2001', 'Mechanical Engineering', '2001', 'Statics'
 Insert into Course Values ('ME3600', 'Mechanical Engineering', '3600', 'Fluid Mechanics', 'Fall', '2026', 'Drosdick031', 'Full', '12:30pm');
 Insert into Course Values ('ME3950', 'Mechanical Engineering', '3950', 'Heat Transfer', 'Fall', '2026',	'Drosdick314', 'Full', '3:30pm');
 
-Insert into Student Values ('CW01',	'Catherine', 'Wollan',	'Sophomore', 'ME', 'ME2001', 'cwollan@villanova.edu', '100');
-Insert into Student Values ('JC01',  'Joe', 'Ciampa', 'Sophomore', 'ME', 'ME2001', 'jciampa@villanova.edu', '90');
-Insert into Student Values ('JS01', 'Jack', 'Szeghy', 'Sophomore', 'ME', 'ME2001', 'jszeghy@villanova.edu', '95');
-Insert into Student Values('MD01',	'Mary',	'Duncan',	'Sophomore',	'ME',	'ME2001',	'mduncan@villanova.edu', '91');
-Insert into Student Values ('JB01',	'Jacob', 'Bambino',	'Sophomore', 'ME',	'ME2001', 'jbambino@villanova.edu', '93');
-Insert into Student Values ('KP01',	'Kierra',	'Pickard',	'Junior',	'ME',	'ME3600',	'kpickard@villanova.edu', '94.62');
-Insert into Student Values ('MB01', 'Morgan',	'Bullen', 'Junior', 'ME', 'ME3600', 'mbullen@villanova.edu', '96.15');
-Insert into Student Values ('CM01',	'Catherine',	'Murphy',	'Junior', 'ME',	'ME3600', 'Cmurph90@villanova.edu', '89.23');
-Insert into Student Values('MW01',	'Mia',	'Walsh',	'Junior',	'ME',	'ME3600',	'mwalsh@villanova.edu', '91.54');
-Insert into Student Values ('MS01', 'Matthew', 	'Seal',	'Junior',	'ME',	'ME3600',	'mseal@villanova.edu', '93.85');
-Insert into Student Values ('AM01',	'Ava',	'McCann',	'Junior',	'ME',	'ME3950',	'amccann@villanova.edu', '97');
-Insert into Student Values ('AK01',	'Arya',	'Kaul',	'Junior',	'ME',	'ME3950',	'akaul@villanova.edu', '93');
-Insert into Student Values ('SD01',	'Samantha',	'Damaia',	'Junior',	'ME',	'ME3950',	'sdamaia@villanova.edu', '91');
-Insert into Student Values ('SP01',	'Jenna',	'Parker',	'Junior',	'ME',	'ME3950', 'jparker@villanova.edu', '96');
-Insert into Student Values ('CD01',	'Caleigh',	'Dinsmore',	'Junior', 'ME', 'ME3950',	'cdinsmore@villanova.edu', '94');
+Insert into Student Values ('CW01',	'Catherine', 'Wollan',	'Sophomore', 'ME', 'ME2001', 'cwollan@villanova.edu', NULL);
+Insert into Student Values ('JC01',  'Joe', 'Ciampa', 'Sophomore', 'ME', 'ME2001', 'jciampa@villanova.edu', NULL);
+Insert into Student Values ('JS01', 'Jack', 'Szeghy', 'Sophomore', 'ME', 'ME2001', 'jszeghy@villanova.edu', NULL);
+Insert into Student Values('MD01',	'Mary',	'Duncan',	'Sophomore',	'ME',	'ME2001',	'mduncan@villanova.edu', NULL);
+Insert into Student Values ('JB01',	'Jacob', 'Bambino',	'Sophomore', 'ME',	'ME2001', 'jbambino@villanova.edu', NULL);
+Insert into Student Values ('KP01',	'Kierra',	'Pickard',	'Junior',	'ME',	'ME3600',	'kpickard@villanova.edu', NULL);
+Insert into Student Values ('MB01', 'Morgan',	'Bullen', 'Junior', 'ME', 'ME3600', 'mbullen@villanova.edu', NULL);
+Insert into Student Values ('CM01',	'Catherine',	'Murphy',	'Junior', 'ME',	'ME3600', 'Cmurph90@villanova.edu', NULL);
+Insert into Student Values('MW01',	'Mia',	'Walsh',	'Junior',	'ME',	'ME3600',	'mwalsh@villanova.edu', NULL);
+Insert into Student Values ('MS01', 'Matthew', 	'Seal',	'Junior',	'ME',	'ME3600',	'mseal@villanova.edu', NULL);
+Insert into Student Values ('AM01',	'Ava',	'McCann',	'Junior',	'ME',	'ME3950',	'amccann@villanova.edu', NULL);
+Insert into Student Values ('AK01',	'Arya',	'Kaul',	'Junior',	'ME',	'ME3950',	'akaul@villanova.edu', NULL);
+Insert into Student Values ('SD01',	'Samantha',	'Damaia',	'Junior',	'ME',	'ME3950',	'sdamaia@villanova.edu', NULL);
+Insert into Student Values ('SP01',	'Jenna',	'Parker',	'Junior',	'ME',	'ME3950', 'jparker@villanova.edu', NULL);
+Insert into Student Values ('CD01',	'Caleigh',	'Dinsmore',	'Junior', 'ME', 'ME3950',	'cdinsmore@villanova.edu', NULL);
 
 -- Jordan Barile: Inserting values into categories and assignment tables
 INSERT INTO CATEGORIES VALUES ('C001','ME2001','HW_Grade', 20);
@@ -164,17 +164,17 @@ values('MD01','FINAL_S', 30);
 
 
 insert into Grades 
-values('JB01','HW1_S', 10); 
+values('JB01','HW1_S', 2); 
 insert into Grades 
-values('JB01','HW2_S', 9);
+values('JB01','HW2_S', 2);
 insert into Grades 
-values('JB01','LAB1_S', 10);
+values('JB01','LAB1_S', 2);
 insert into Grades 
-values('JB01','LAB2_S', 9);
+values('JB01','LAB2_S', 2);
 insert into Grades 
-values('JB01','MIDTERM_S', 29);
+values('JB01','MIDTERM_S', 2);
 insert into Grades 
-values('JB01','FINAL_S', 26);
+values('JB01','FINAL_S', 2);
 
 
 insert into Grades 
@@ -282,18 +282,35 @@ values('CD01','MIDTERM_H', 24);
 insert into Grades 
 values('CD01','FINAL_H', 22);
 
-select * from Student;
 --Lauren Markarian: Update Final Grade Field
 UPDATE STUDENT s
-SET Final_Grade =
+SET FINAL_GRADE =
 (
-SELECT ROUND(
-       SUM(g.PointsEarned) / SUM(a.PointsPossible) * 100, 2
+SELECT ROUND(SUM((category_score * WeightPercentage / 100.0)) * 100, 2
 )
+From (
+    Select c.CategoryID, c.WeightPercentage, (SUM(g.PointsEarned) / SUM(a.PointsPossible)) * 100 AS
+    Category_Score
 FROM Grades g
 JOIN ASSIGNMENT a
-ON g.AssignmentID = a.AssignmentID
+    ON g.AssignmentID = a.AssignmentID
+JOIN Categories c
+    ON a.CategoryID = c.CategoryID
 WHERE g.Student_ID = s.Student_ID
+Group by c.CategoryID, c.WeightPercentage
+)
+);
+
+--Lauren Markarian: Update the Status Field
+UPDATE COURSE c
+SET Status =
+(
+    SELECT CASE 
+        WHEN COUNT(*) >= 5 THEN 'Full'
+        ELSE 'Open'
+    END
+    FROM STUDENT s
+    WHERE s.Course_ID = c.Course_ID
 );
 
 select * from Course;
@@ -301,6 +318,9 @@ select * from Student;
 select * from Categories;
 select * from Assignment;
 select * from Grades;
+
+
+
 
 
 
