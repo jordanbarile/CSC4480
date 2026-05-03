@@ -110,183 +110,108 @@ INSERT INTO ASSIGNMENT VALUES ('MIDTERM_H', 'C012', 'Midterm', 25);
 INSERT INTO ASSIGNMENT VALUES ('FINAL_H', 'C013', 'Final', 25);
 
 -- inserted grades Julia 
-insert into Grades 
-values('CW01','HW1_S', 10); 
-insert into Grades 
-values('CW01','HW2_S', 10);
-insert into Grades 
-values('CW01','LAB1_S', 10);
-insert into Grades 
-values('CW01','LAB2_S', 10);
-insert into Grades 
-values('CW01','MIDTERM_S', 30);
-insert into Grades 
-values('CW01','FINAL_S', 30);
+insert into Grades values('CW01','HW1_S', 10); 
+insert into Grades values('CW01','HW2_S', 10);
+insert into Grades values('CW01','LAB1_S', 10);
+insert into Grades values('CW01','LAB2_S', 10);
+insert into Grades values('CW01','MIDTERM_S', 30);
+insert into Grades values('CW01','FINAL_S', 30);
 
-insert into Grades 
-values('JC01','HW1_S', 8); 
-insert into Grades 
-values('JC01','HW2_S', 9);
-insert into Grades 
-values('JC01','LAB1_S', 9);
-insert into Grades 
-values('JC01','LAB2_S', 10);
-insert into Grades 
-values('JC01','MIDTERM_S', 28);
-insert into Grades 
-values('JC01','FINAL_S', 26);
+insert into Grades values('JC01','HW1_S', 8); 
+insert into Grades values('JC01','HW2_S', 9);
+insert into Grades values('JC01','LAB1_S', 9);
+insert into Grades values('JC01','LAB2_S', 10);
+insert into Grades values('JC01','MIDTERM_S', 28);
+insert into Grades values('JC01','FINAL_S', 26);
 
-insert into Grades 
-values('JS01','HW1_S', 10); 
-insert into Grades 
-values('JS01','HW2_S', 9);
-insert into Grades 
-values('JS01','LAB1_S', 10);
-insert into Grades 
-values('JS01','LAB2_S', 10);
-insert into Grades 
-values('JS01','MIDTERM_S', 27);
-insert into Grades 
-values('JS01','FINAL_S', 29);
+insert into Grades values('JS01','HW1_S', 10); 
+insert into Grades values('JS01','HW2_S', 9);
+insert into Grades values('JS01','LAB1_S', 10);
+insert into Grades values('JS01','LAB2_S', 10);
+insert into Grades values('JS01','MIDTERM_S', 27);
+insert into Grades values('JS01','FINAL_S', 29);
 
-insert into Grades 
-values('MD01','HW1_S', 9); 
-insert into Grades 
-values('MD01','HW2_S', 8);
-insert into Grades 
-values('MD01','LAB1_S', 10);
-insert into Grades 
-values('MD01','LAB2_S', 9);
-insert into Grades 
-values('MD01','MIDTERM_S', 25);
-insert into Grades 
-values('MD01','FINAL_S', 30);
+insert into Grades values('MD01','HW1_S', 9); 
+insert into Grades values('MD01','HW2_S', 8);
+insert into Grades values('MD01','LAB1_S', 10);
+insert into Grades values('MD01','LAB2_S', 9);
+insert into Grades values('MD01','MIDTERM_S', 25);
+insert into Grades values('MD01','FINAL_S', 30);
 
 
-insert into Grades 
-values('JB01','HW1_S', 2); 
-insert into Grades 
-values('JB01','HW2_S', 2);
-insert into Grades 
-values('JB01','LAB1_S', 2);
-insert into Grades 
-values('JB01','LAB2_S', 2);
-insert into Grades 
-values('JB01','MIDTERM_S', 2);
-insert into Grades 
-values('JB01','FINAL_S', 2);
+insert into Grades values('JB01','HW1_S', 6); 
+insert into Grades values('JB01','HW2_S', 7);
+insert into Grades values('JB01','LAB1_S', 6);
+insert into Grades values('JB01','LAB2_S', 7);
+insert into Grades values('JB01','MIDTERM_S', 20);
+insert into Grades values('JB01','FINAL_S', 21);
 
 
-insert into Grades 
-values('KP01','ATTENDANCE_F', 15);
-insert into Grades 
-values('KP01','LAB1_F', 24);
-insert into Grades 
-values('KP01','EXAM1_F', 30);
-insert into Grades 
-values('KP01','EXAM2_F', 28);
-insert into Grades 
-values('KP01','EXAM3_F', 26);
+insert into Grades values('KP01','ATTENDANCE_F', 15);
+insert into Grades values('KP01','LAB1_F', 24);
+insert into Grades values('KP01','EXAM1_F', 30);
+insert into Grades values('KP01','EXAM2_F', 28);
+insert into Grades values('KP01','EXAM3_F', 26);
 
-insert into Grades 
-values('MB01','ATTENDANCE_F', 15);
-insert into Grades 
-values('MB01','LAB1_F', 25);
-insert into Grades 
-values('MB01','EXAM1_F', 26);
-insert into Grades 
-values('MB01','EXAM2_F', 29);
-insert into Grades 
-values('MB01','EXAM3_F', 30);
+insert into Grades values('MB01','ATTENDANCE_F', 15);
+insert into Grades values('MB01','LAB1_F', 25);
+insert into Grades values('MB01','EXAM1_F', 26);
+insert into Grades values('MB01','EXAM2_F', 29);
+insert into Grades values('MB01','EXAM3_F', 30);
 
-insert into Grades 
-values('CM01','ATTENDANCE_F', 14);
-insert into Grades 
-values('CM01','LAB1_F', 22);
-insert into Grades 
-values('CM01','EXAM1_F', 28);
-insert into Grades 
-values('CM01','EXAM2_F', 29);
-insert into Grades 
-values('CM01','EXAM3_F', 23);
+insert into Grades values('CM01','ATTENDANCE_F', 14);
+insert into Grades values('CM01','LAB1_F', 22);
+insert into Grades values('CM01','EXAM1_F', 28);
+insert into Grades values('CM01','EXAM2_F', 29);
+insert into Grades values('CM01','EXAM3_F', 23);
 
 
-insert into Grades 
-values('MW01','ATTENDANCE_F', 13);
-insert into Grades 
-values('MW01','LAB1_F', 24);
-insert into Grades 
-values('MW01','EXAM1_F', 30);
-insert into Grades 
-values('MW01','EXAM2_F', 29);
-insert into Grades 
-values('MW01','EXAM3_F', 23);
+insert into Grades values('MW01','ATTENDANCE_F', 13);
+insert into Grades values('MW01','LAB1_F', 24);
+insert into Grades values('MW01','EXAM1_F', 30);
+insert into Grades values('MW01','EXAM2_F', 29);
+insert into Grades values('MW01','EXAM3_F', 23);
 
 
-insert into Grades 
-values('MS01','ATTENDANCE_F', 15);
-insert into Grades 
-values('MS01','LAB1_F', 22);
-insert into Grades 
-values('MS01','EXAM1_F', 30);
-insert into Grades 
-values('MS01','EXAM2_F', 27);
-insert into Grades 
-values('MS01','EXAM3_F', 28);
+insert into Grades values('MS01','ATTENDANCE_F', 15);
+insert into Grades values('MS01','LAB1_F', 22);
+insert into Grades values('MS01','EXAM1_F', 30);
+insert into Grades values('MS01','EXAM2_F', 27);
+insert into Grades values('MS01','EXAM3_F', 28);
 
 
-insert into Grades 
-values('AM01','HW1_H', 23);
-insert into Grades 
-values('AM01','LAB1_H', 25);
-insert into Grades 
-values('AM01','MIDTERM_H', 24);
-insert into Grades 
-values('AM01','FINAL_H', 25);
+insert into Grades values('AM01','HW1_H', 23);
+insert into Grades values('AM01','LAB1_H', 25);
+insert into Grades values('AM01','MIDTERM_H', 24);
+insert into Grades values('AM01','FINAL_H', 25);
 
-insert into Grades 
-values('AK01','HW1_H', 25);
-insert into Grades 
-values('AK01','LAB1_H', 22);
-insert into Grades 
-values('AK01','MIDTERM_H', 24);
-insert into Grades 
-values('AK01','FINAL_H', 22);
+insert into Grades values('AK01','HW1_H', 25);
+insert into Grades values('AK01','LAB1_H', 22);
+insert into Grades values('AK01','MIDTERM_H', 24);
+insert into Grades values('AK01','FINAL_H', 22);
 
 
-insert into Grades 
-values('SD01','HW1_H', 25);
-insert into Grades 
-values('SD01','LAB1_H', 23);
-insert into Grades 
-values('SD01','MIDTERM_H', 22);
-insert into Grades 
-values('SD01','FINAL_H', 21);
+insert into Grades values('SD01','HW1_H', 25);
+insert into Grades values('SD01','LAB1_H', 23);
+insert into Grades values('SD01','MIDTERM_H', 22);
+insert into Grades values('SD01','FINAL_H', 21);
 
 
-insert into Grades 
-values('SP01','HW1_H', 22);
-insert into Grades 
-values('SP01','LAB1_H', 25);
-insert into Grades 
-values('SP01','MIDTERM_H', 24);
-insert into Grades 
-values('SP01','FINAL_H', 25);
+insert into Grades values('SP01','HW1_H', 22);
+insert into Grades values('SP01','LAB1_H', 25);
+insert into Grades values('SP01','MIDTERM_H', 24);
+insert into Grades values('SP01','FINAL_H', 25);
 
-insert into Grades 
-values('CD01','HW1_H', 25);
-insert into Grades 
-values('CD01','LAB1_H', 23);
-insert into Grades 
-values('CD01','MIDTERM_H', 24);
-insert into Grades 
-values('CD01','FINAL_H', 22);
+insert into Grades values('CD01','HW1_H', 25);
+insert into Grades values('CD01','LAB1_H', 23);
+insert into Grades values('CD01','MIDTERM_H', 24);
+insert into Grades values('CD01','FINAL_H', 22);
 
 --Lauren Markarian: Update Final Grade Field
 UPDATE STUDENT s
 SET FINAL_GRADE =
 (
-SELECT ROUND(SUM((category_score * WeightPercentage / 100.0)) * 100, 2
+SELECT ROUND(SUM((category_score * WeightPercentage / 100.0)), 2
 )
 From (
     Select c.CategoryID, c.WeightPercentage, (SUM(g.PointsEarned) / SUM(a.PointsPossible)) * 100 AS
@@ -319,18 +244,41 @@ select * from Categories;
 select * from Assignment;
 select * from Grades;
 
+-- Jordan: Update a Record
+UPDATE Grades
+    SET PointsEarned = 30
+    WHERE Student_ID = 'JB01'
+    AND AssignmentID = 'FINAL_S';
 
+UPDATE STUDENT s
+SET FINAL_GRADE =
+(
+SELECT ROUND(SUM((category_score * WeightPercentage / 100.0)), 2
+)
+From (
+    Select c.CategoryID, c.WeightPercentage, (SUM(g.PointsEarned) / SUM(a.PointsPossible)) * 100 AS
+    Category_Score
+FROM Grades g
+JOIN ASSIGNMENT a
+    ON g.AssignmentID = a.AssignmentID
+JOIN Categories c
+    ON a.CategoryID = c.CategoryID
+WHERE g.Student_ID = s.Student_ID
+Group by c.CategoryID, c.WeightPercentage
+)
+)
+WHERE s.Student_ID = 'JB01';
 
+select * from student;
 
+-- Read a record
 
+SELECT *
+FROM STUDENT
+WHERE FINAL_GRADE >= 89 AND FINAL_GRADE < 90;
 
+UPDATE STUDENT
+SET FINAL_GRADE = 90
+WHERE Student_ID = 'CM01';
 
-
-
-
-
-
-
-
-
-
+select * from student;
