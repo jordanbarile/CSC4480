@@ -258,10 +258,15 @@ SET Status =
     WHERE s.Course_ID = c.Course_ID
 );
 
+PROMPT ===== COURSE TABLE =====
 select * from Course;
+PROMPT ===== STUDENT TABLE =====
 select * from Student;
+PROMPT ===== CATEGORIES TABLE =====
 select * from Categories;
+PROMPT ===== ASSIGNMENT TABLE =====
 select * from Assignment;
+PROMPT ===== GRADES TABLE =====
 select * from Grades;
 
 -- Jordan: Update a Record
@@ -301,6 +306,7 @@ UPDATE STUDENT
 SET FINAL_GRADE = 90
 WHERE Student_ID = 'CM01';
 
+PROMPT ===== STUDENT TABLE =====
 select * from student;
 
 -- Jordan Barile: test to try and enroll student in a full class
